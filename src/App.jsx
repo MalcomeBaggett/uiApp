@@ -1,23 +1,35 @@
 import { useState } from "react"
+import { GoBell, GoDownload, GoDatabase } from "react-icons/go"
 import Button from "./Button"
 function App() {
+  const handleClick = () => {
+    console.log("click")
+  }
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
       <div>
-        <Button>Hello</Button>
+        <Button primary onClick={handleClick}>
+          <GoBell />
+          Hello
+        </Button>
       </div>
       <div>
-        <Button>Hello</Button>
+        <Button secondary>
+          <GoDownload />
+          Hello
+        </Button>
       </div>
       <div>
-        <Button>Hello</Button>
+        <Button success>
+          <GoDatabase />
+          Hello
+        </Button>
       </div>
       <div>
-        <Button>Hello</Button>
+        <Button warning>Hello</Button>
       </div>
       <div>
-        <Button>Hello</Button>
+        <Button danger>Hello</Button>
       </div>
     </>
   )
