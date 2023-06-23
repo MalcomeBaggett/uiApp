@@ -11,7 +11,7 @@ function ButtonPage() {
       <div>
         <Button primary onClick={handleClick}>
           <GoBell />
-          jared rocks
+          kick rocks
         </Button>
       </div>
       <div>

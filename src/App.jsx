@@ -1,12 +1,9 @@
 import { useState } from "react"
 import { GoBell, GoDownload, GoDatabase } from "react-icons/go"
-import ButtonPage from "./pages/ButtonPage"
+import Accordion from "./components/Accordion"
 function App() {
-  return (
-    <>
-      <ButtonPage />
-    </>
-  )
+  const items = []
+  return <Accordion />
 }
 
 export default App
